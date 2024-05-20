@@ -40,10 +40,11 @@ def calculate_redundancy(alphabet_size, shannon_entropy):
 
 def main():
     """
-    Основная функция для вычисления и вывода мощности алфавита, энтропии по Хартли, энтропии по Шеннону и избыточности текста.
+    Основная функция для вычисления и вывода мощности алфавита, энтропии по Хартли, 
+    энтропии по Шеннону и избыточности текста.
     """
     file_path = input("Введите путь к файлу: ")
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         text_content = file.read()
 
     alphabet_size = calculate_alphabet_size(text_content)

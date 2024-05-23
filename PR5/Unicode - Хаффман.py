@@ -91,11 +91,11 @@ if __name__ == "__main__":
     
     decoded_text = encoder_decoder.decode(encoded_file, huffman_code_file, output_file)
     print(f"Декодированный текст сохранен в файле: {output_file}")
-    
+
     original_file_size = encoder_decoder.get_file_size(text_file)
     encoded_file_size = encoder_decoder.get_file_size(encoded_file)
     entropy = encoder_decoder.calculate_entropy(decoded_text)
-    
+
     print(f"Размер исходного файла: {original_file_size} байт")
     print(f"Размер закодированного файла: {encoded_file_size} байт")
     print(f"Энтропия исходного текста: {entropy}")
